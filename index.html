@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="$Juan Meme Token - The official landing page for the Juan meme token">
+    <meta name="keywords" content="Juan, meme token, cryptocurrency, Solana">
+    <meta name="author" content="Juan Meme Token Team">
+    <title>$Juan Meme Token</title>
+    <style id="custom-styles">
+        /* Styles will be injected here by JavaScript */
+    </style>
+</head>
+<body>
+    <div id="content">
+        <!-- Content will be injected here by JavaScript -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Define the styles
+            var styles = `
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                body, html {
+                    height: 100%;
+                    width: 100%;
+                    overflow-x: hidden;
+                }
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #87CEEB;
+                    position: relative;
+                }
+                .nav-button {
+                    display: inline-block;
+                    margin: 10px;
+                    padding: 5px 10px;
+                    background-color: #4CAF50;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                }
+                .clouds {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                }
+                .cloud {
+                    background-color: white;
+                    border-radius: 50%;
+                    height: 50px;
+                    width: 100px;
+                    position: absolute;
+                }
+                .balcony {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 100px;
+                    background-color: #8B4513;
+                }
+                .railing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 20px;
+                    background-color: #D2691E;
+                }
+                .floor-pattern {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 80px;
+                    background-image: repeating-linear-gradient(
+                        45deg,
+                        #8B4513,
+                        #8B4513 10px,
+                        #A0522D 10px,
+                        #A0522D 20px
+                    );
+                }
+                .meme-container {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                }
+                .horse {
+                    font-size: 100px;
+                }
+                .juan-text {
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: white;
+                    text-shadow: 2px 2px 4px #000000;
+                }
+                .button {
+                    display: inline-block;
+                    margin-top: 20px;
+                    padding: 10px 20px;
+                    background-color: #4CAF50;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-size: 18px;
+                }
+            `;
+
+            // Inject the styles
+            document.getElementById('custom-styles').innerHTML = styles;
+
+            // Define the content
+            var content = `
+                <nav>
+                    <a href="https://juansol.xyz/" class="nav-button" target="_blank">Home</a>
+                    <a href="https://dexscreener.com/solana/4nmsxsnxpdagz82hj9bjdfszf4vrzpe7s4wfrfydztct" class="nav-button" target="_blank">Chart</a>
+                    <a href="https://t.me/JuanCTOPortal" class="nav-button" target="_blank">Telegram</a>
+                    <a href="https://x.com/JuanDaH0rse" class="nav-button" target="_blank">X</a>
+                </nav>
+
+                <main>
+                    <div class="clouds">
+                        <div class="cloud"></div>
+                        <div class="cloud"></div>
+                        <div class="cloud"></div>
+                    </div>
+
+                    <div class="balcony">
+                        <div class="railing"></div>
+                        <div class="floor-pattern"></div>
+                    </div>
+
+                    <div class="meme-container">
+                        <div class="horse">
+                            🐴
+                        </div>
+                        <div class="juan-text">
+                            $Juan.
+                        </div>
+                    </div>
+
+                    <a href="https://juanonthebalcony.meme" class="button" target="_blank">MEME MAKER</a>
+                </main>
+            `;
+
+            // Inject the content
+            document.getElementById('content').innerHTML = content;
+
+            // Remove any GitHub-injected elements
+            var unwantedElements = document.querySelectorAll('.github-corner, .github-fork-ribbon, .github-ribbon');
+            unwantedElements.forEach(function(element) {
+                element.remove();
+            });
+
+            // Override the title
+            document.title = '$Juan Meme Token';
+        });
+    </script>
+</body>
+</html>
