@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>$Juan. - The Balcony of Crypto!</title>
+    <title>juan. - The Balcony of Crypto!</title>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@700&family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
+        /* All styles from version 19 remain exactly the same */
         body {
             font-family: 'Comic Neue', cursive;
             margin: 0;
@@ -41,48 +42,53 @@
             position: relative;
             overflow: hidden;
         }
-        .clouds {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: hidden;
-            transform: translateZ(0);
-        }
         .cloud {
             position: absolute;
-            background: #fff;
-            width: 200px;
-            height: 60px;
-            border-radius: 200px;
-            animation: float 15s infinite linear;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
         }
         .cloud:before, .cloud:after {
             content: '';
             position: absolute;
-            background: #fff;
+            background: white;
+            border-radius: 50%;
+        }
+        .cloud1 {
             width: 100px;
-            height: 80px;
-            position: absolute;
-            top: -15px;
-            left: 10px;
-            border-radius: 100px;
-            transform: rotate(30deg);
+            height: 30px;
+            top: 40px;
+            left: 20%;
         }
-        .cloud:after {
+        .cloud1:before {
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            left: 5px;
+        }
+        .cloud1:after {
+            width: 70px;
+            height: 70px;
+            top: -35px;
+            right: 5px;
+        }
+        .cloud2 {
             width: 120px;
-            height: 120px;
-            top: -55px;
-            left: auto;
-            right: 15px;
+            height: 35px;
+            top: 80px;
+            right: 15%;
         }
-        .cloud:nth-child(1) { top: 10%; left: -5%; animation-duration: 20s; }
-        .cloud:nth-child(2) { top: 30%; right: -5%; animation-duration: 25s; animation-delay: -5s; }
-        .cloud:nth-child(3) { top: 60%; left: 10%; animation-duration: 30s; animation-delay: -10s; }
-        @keyframes float {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(100vw); }
+        .cloud2:before {
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            left: 10px;
+        }
+        .cloud2:after {
+            width: 80px;
+            height: 80px;
+            top: -40px;
+            right: 10px;
         }
         .balcony {
             position: absolute;
@@ -184,11 +190,8 @@
         <a href="https://x.com/JuanDaH0rse" class="nav-button" target="_blank">X</a>
     </nav>
     <header>
-        <div class="clouds">
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-        </div>
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
         <div class="balcony">
             <div class="railing"></div>
             <div class="floor-pattern"></div>
@@ -199,5 +202,12 @@
         </div>
         <a href="https://juanonthebalcony.meme" class="button" target="_blank">MEME MAKER</a>
     </header>
+    <div style="max-width: 800px; margin: 20px auto; padding: 0 20px; display: flex; align-items: flex-start;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxwCwswvSXBlIR8d1zRUfXPNEgiIw7F6qDrg&s" alt="Juan on the Balcony" style="width: 200px; height: auto; margin-right: 20px;">
+        <div>
+            <p>Every transaction with $JUAN is a testament to defying the odds, a celebration of bold moves in high places, just like Juan on his balcony. This horse isn't just on high ground; he's at the zenith of crypto innovation, turning heads and sparking conversations in forums, chats, and trading floors around the world.</p>
+            <p>Owning $JUAN is more than an investment—it's an entry into a folklore, a community where each member shares the lore of Juan, the balcony-standing horse. It's a market where courage is currency, and each share is a slice of the legend.</p>
+        </div>
+    </div>
 </body>
 </html>
